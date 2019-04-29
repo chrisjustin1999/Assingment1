@@ -1,7 +1,5 @@
 //Rotation Cipher Decryption of a message
 
-// #################### ADD USER INPUT FOR ROTATION KEY FUNCTIONALITY ######################
-
 #include <stdio.h>
 
 int main () {
@@ -22,17 +20,19 @@ int main () {
         if ((65<input[i]<90) || (97<input[i]<122) || (input[i]=32)) {
             if (input[i]>=65 && input[i]<=90) {
                 temp = input[i]; 
-                temp = temp - 65;
+                temp = temp - 90;
                 temp = temp - key;
-                temp = temp + 65 +26;
+                temp = temp%26;
+                temp = temp + 90;
                 enc[i] = temp;
-            } else if (input[i]>=97 && input[i]<=122) {
+            }   else if (input[i]>=97 && input[i]<=122) {
                 temp = input[i]; 
-                temp = temp - 97;
+                temp = temp - 122;
                 temp = temp - key;
-                //if((temp + 97) > 101) {temp = temp + 97;} else {temp = temp + 97 + 26;}  -   fixxx
+                temp = temp%26;
+                temp = temp + 90;
                 enc[i] = temp;
-            } else {
+            }   else {
                 enc[i] = input[i];
             }
         }

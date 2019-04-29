@@ -1,3 +1,5 @@
+//Substitution Cipher Encryption of a message
+
 #include <stdio.h>
 
 int main()
@@ -67,44 +69,42 @@ int main()
                         break;
             case 'z':   enc[i] = 'A';
                         break;
-            case 'A':   enc[i] = 'o';
+            case 'A':   enc[i] = 'Z';
                         break;
-            case 'B':   enc[i] = 'Z';
+            case 'B':   enc[i] = 'Y';
                         break;
-            case 'C':   enc[i] = 'Y';
+            case 'C':   enc[i] = 'X';
                         break;
-            case 'D':   enc[i] = 'X';
+            case 'D':   enc[i] = 'W';
                         break;
-            case 'E':   enc[i] = 'W';
+            case 'E':   enc[i] = 'V';
                         break;
-            case 'F':   enc[i] = 'V';
+            case 'F':   enc[i] = 'U';
                         break;
-            case 'G':   enc[i] = 'U';
+            case 'G':   enc[i] = 'T';
                         break;
-            case 'H':   enc[i] = 'T';
+            case 'H':   enc[i] = 'S';
                         break;
-            case 'I':   enc[i] = 'S';
+            case 'I':   enc[i] = 'R';
                         break;
-            case 'J':   enc[i] = 'R';
+            case 'J':   enc[i] = 'Q';
                         break;
-            case 'K':   enc[i] = 'Q';
+            case 'K':   enc[i] = 'P';
                         break;
-            case 'L':   enc[i] = 'P';
+            case 'L':   enc[i] = 'O';
                         break;
-            case 'M':   enc[i] = 'O';
+            case 'M':   enc[i] = 'N';
                         break;
-            case 'N':   enc[i] = 'N';
+            case 'N':   enc[i] = 'M';
                         break;
-            case 'O':   enc[i] = 'M';
+            case 'O':   enc[i] = 'L';
                         break;
-            case 'P':   enc[i] = 'L';
+            case 'P':   enc[i] = 'K';
                         break;
-            case 'Q':   enc[i] = 'K';
+            case 'Q':   enc[i] = 'J';
                         break;
-            case 'R':   enc[i] = 'J';
-                        break;
-            case 'S':   enc[i] = 'I';
-                        break;
+            case 'R':   enc[i] = 'I';
+         
             case 'S':   enc[i] = 'H';
                         break;
             case 'T':   enc[i] = 'G';
@@ -121,12 +121,7 @@ int main()
                         break;
             case 'Z':   enc[i] = 'A';
                         break;
-            
-
-
-                        
-            //FINISH 
-            default:    printf("Choice other than 1, 2 and 3"); 
+            case ' ':   enc[i] = ' ';
                         break;
         }
     }

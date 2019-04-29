@@ -1,7 +1,5 @@
 //Rotation Cipher Encyrption of a message
 
-// #################### ADD USER INPUT FOR ROTATION KEY FUNCTIONALITY ######################
-
 #include <stdio.h>
 
 int main () {
