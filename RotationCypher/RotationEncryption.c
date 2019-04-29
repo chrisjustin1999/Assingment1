@@ -29,6 +29,13 @@ int main () {
                 temp = temp%26;
                 temp = temp + 65;
                 enc[i] = temp;
+            }  else if (input[i]>=97 && input[i]<=122) {
+                temp = input[i]; 
+                temp = temp - 97;
+                temp = temp + key;
+                temp = temp%26;
+                temp = temp + 65;
+                enc[i] = temp;
             } else {
                 enc[i] = input[i];
             }
